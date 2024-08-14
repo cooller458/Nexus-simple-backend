@@ -7,6 +7,11 @@ import profileRoutes from './routes/profileRoutes.js';
 import notificationRoutes from './routes/notificationRoutes.js';
 import portfolioRoutes from './routes/portfolioRoutes.js';
 import transactionRoutes from './routes/transactionRoutes.js';
+import backupRoutes from './routes/backupRoutes.js';
+import defiRoutes from './routes/defiRoutes.js';
+import accountAbstractionRoutes from './routes/accountAbstractionRoutes.js';
+import ensAndUsernameRoutes from './routes/ensAndUsernameRoutes.js';
+
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -27,6 +32,11 @@ app.use('/api/profile', profileRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/portfolio', portfolioRoutes);
 app.use('/api/transaction', transactionRoutes);
+app.use('/api/backup', backupRoutes);
+app.use('/api/defi', defiRoutes);
+app.use('/api/account-abstraction', accountAbstractionRoutes);
+app.use('/api/ens', ensAndUsernameRoutes);
+app.use('/api/username', ensAndUsernameRoutes);
 
 const PORT = process.env.PORT || 5174;
 
